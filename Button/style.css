@@ -1,0 +1,66 @@
+body {
+    background-color: #e8e8e8;
+}
+
+main {
+    color: #f2f5f7;
+    text-align: center;
+    position: relative;
+    min-height: 15vh; /* Garante que o body ocupe a altura total da viewport */
+    margin: 20%;
+
+}
+
+button {
+    padding: 10px;
+    border: 1px solid;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 12px; /* Arredondar bordas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
+}
+
+button:hover {
+    transform: scale(1.05); /* Aumentar ligeiramente ao passar o mouse */
+}
+
+button {
+    padding: 10px;
+    border: 1px solid;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 10px;
+    font-size: 16px;
+}
+
+.change {
+    background-color: lightblue;
+    border-color: blue;
+}
+
+.mouseover {
+    background-color: yellow;
+    border-color: orange;
+}
+
+.mouseout {
+    background-color: red;
+    border-color: darkred;
+}
+
+.keydown {
+    background-color: green;
+    border-color: darkgreen;
+}
+
+.load {
+    background-color: purple;
+    border-color: darkviolet;
+}
+
+footer {
+    text-align: center;
+    margin-top: 0 auto;
+}

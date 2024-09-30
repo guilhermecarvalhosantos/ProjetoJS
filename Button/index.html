@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Button</title>
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <input type="text" onchange="handleChange()" placeholder="Digite algo e mude o foco">
+        <button class="mouseover" onmouseover="handleMouseOver()">Passe o mouse aqui</button>
+        <button class="mouseout" onmouseout="handleMouseOut()">Saia do mouse</button>
+        <button class="keydown" onkeydown="handleKeyDown()" tabindex="0">Pressione uma tecla</button>
+        <button class="load" onclick="handleLoad()">Carregar</button>
+
+    </main>
+
+    <script>
+        function handleChange() {
+            alert('O valor foi alterado!');
+        }
+
+        function handleMouseOver() {
+            alert('Você passou o mouse sobre o botão!');
+        }
+
+        function handleMouseOut() {
+            alert('Você saiu do mouse sobre o botão!');
+        }
+
+        function handleKeyDown(event) {
+            alert('Tecla pressionada: ' + event.key);
+        }
+
+        function handleLoad() {
+            alert('A página foi carregada!');
+        }
+
+        // Para permitir a captura de teclas no botão
+        document.querySelector('.keydown').focus();
+    </script>
+
+    <footer>
+        <p>&copy; 2024 Guilherme</p>
+    </footer>
+</body>
+
+</html>
